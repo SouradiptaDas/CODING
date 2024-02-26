@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<!--you can put comments by this using -->
+<!--OR BY USING [CTRL + /] -->
+<html lang="en">
+
+<!--here starts our header tag
+It contains metadata, title, external datasheets like css file and javascript files-->
+
+<head>
+    <meta charset="UTF-8"> <!--CHARACTER SIZE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--HELPS IN CONTENT VIEW, SETS WIDTH OF THE CONTENT AS PER THE DEVICE WIDTH-->
+    <meta name="description" content="This is description">
+    <!--"META" IS A TAG WHICH IS METADATA, NAME AND CONTENT IS A ATTRIBUTE -->
+    <meta name="robots" content="INDEX, FOLLOW"> <!--GIVES COMMAND EITHER TO RANK THE WEBSITE OR NOT-->
+    <title>This is our title</title>
+    <!-- ATTRIBUTES SPECIFIES THE TAG TO A PARTICULAR FUNCTION -->
+
+    <!--This is how you include a CSS file-->
+    <link rel="stylesheet" href="souradipta.css">
+
+</head>
+
+<!--here starts our body tag-->
+
+<body>
+    <h1>Our body content is here</h1>
+
+    <h1>Souradipta</h1> <!--most bold heading -->
+    <h2>Souradipta</h2> <!--decreasing -->
+    <h3>Souradipta</h3> <!--decreasing -->
+    <h4>Souradipta</h4> <!--decreasing -->
+    <h5>Souradipta</h5> <!--decreasing -->
+    <h6>Souradipta</h6> <!--least bold heading -->
+    <br>
+    <hr><br>
+
+    <p>This is my paragraph</p>
+
+    <!-- Lorem(n), n = no. of words you want randomly -->
+    <!-- strong = makes strong word -->
+    <!-- em = makes emphasized word -->
+    <!-- b = makes bold word -->
+    <!-- i = makes italic word -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis veritatis quibusdam labore obcaecati
+        molestiae, quos assumenda mollitia iure suscipit? Vitae ex, repellendus <strong>This is strong.</strong> minima
+        nisi explicabo consectetur, <em>This is Emphasized.</em> incidunt quasi, amet magni sit asperiores repudiandae
+        <b>This is bold</b> veritatis dolore maiores officia atque quod <i>This is italic</i>! ipsum dolor sit.
+    </p>
+    <!--lorem44 -->
+
+    <p>
+        first line <br>second <!--Here comes a horizontal line-->
+        <hr> line
+    </p> <!--br = makes a break and hr = makes a horizontal line  #using br repeatedly is not recommended -->
+
+    <p>first</p> <!--p*4 -->
+    <p>second</p>
+    <p>third</p>
+    <p>fourth</p>
+    <br>
+    <hr><br>
+
+    <h1>Links</h1>
+
+    <a href="https://google.com" target="blank">Google</a><br>
+    <a href="https://www.linkedin.com/in/souradipta-das-d212200698/" target="blank">Linkedin</a><br>
+    <a href="http://www.youtube.com/@dragenzaofcl"
+        target="blank">YouTube</a><br><!--"anchor" tag helps to embed links on the website -->
+    <a href="https://www.instagram.com/dragenzaofcl/"
+        target="blank">Instagram</a><br><!--"target"  is a attribute which helps to open the link in a new page by adding "blank" to it-->
+    <a href="https://www.facebook.com/Dragenzaofcl/" target="blank">Facebook Page</a><br>
+    <a href="https://twitter.com/dragenzaofcl" target="blank">Twitter</a><br>
+    <a href="/HTML/solar_sys.html" target="blank">Solar System Project</a>
+    <br>
+    <hr><br>
+
+    <h1>Images</h1>
+
+    <!-- Image is not present hence alt text is shown -->
+    <img src="soura.jpg" alt="Error Loading Image"><br>
+
+    <!-- we can decide width and height like this but it is not recommended, we will do it through CSS -->
+    <img src="YT_BANNER HIGH.png" alt="Scenary" width="900" height="450">
+
+    <!-- image should be in the folder -->
+    <img src="image.jpg" alt="Scenary">
+    <br>
+    <hr><br>
+
+    <h1>Lists</h1>
+
+    <ul type="square"> <!-- type = disc/square/circle -->
+        <li>This is my first unordered list</li>
+        <li>This is my second unordered list</li>
+        <li>
+            <ol>
+                <li>Another one</li>
+                <li>Another two</li> <!-- this is how you can nest a list in a list -->
+                <li>Another three</li>
+            </ol>
+        </li>
+        <li>This is my third unordered list</li>
+    </ul>
+    <ol type="A">
+        <li>This is my first ordered list</li>
+        <li>This is my second ordered list</li>
+        <li>This is my third ordered list</li>
+    </ol>
+    <br>
+    <hr><br>
+
+    <h1>Tables</h1>
+
+    <table>
+        <caption>Industry Understanding</caption>
+        <!-- th for head -->
+        <thead>
+            <tr>
+                <th>Industry</th>
+                <th>Views</th>
+                <th>Subscriber</th>
+            </tr>
+        </thead>
+        <!-- td for data, rowspan cmd helps to merge the rows and colspan to columns as well, thead, tbody, tfoot just used for easy to grouping to do modification in css file -->
+        <tbody>
+            <tr>
+                <td rowspan="2">Music</td>
+                <td>1000</td>
+                <td>40000</td>
+            </tr>
+            <tr>
+                <!-- <td>Movie</td> -->
+                <td>1000000</td>
+                <td>4000000</td>
+            </tr>
+            <tr>
+                <td>Movie</td>
+                <td colspan="2">1000000</td>
+                <!-- <td>4000000</td> -->
+                <td>4000000</td>
+            </tr>
+            <tr>
+                <td>Game</td>
+                <td>1000000000</td>
+                <td>400000000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer</td>
+                <td>1000000000</td>
+                <td>400000000</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <br>
+    <hr><br>
+
+    <h1>Forms</h1>
+
+    <form action="post">
+        <div>
+            <label for="name">Name = </label> <!-- id and for of label should be same. -->
+            <input type="text" name="Name" id="name" autofocus>
+        </div>
+        <!-- br tag is not recommended so we are using div and also div is a block element, i.e, it takes space of a whole block so the next element comes to next line -->
+        <br> <!-- we are now using br but later it will be changed by CSS -->
+        <div>
+            Role = <input type="text" name="Role">
+        </div>
+        <br>
+        <div>
+            Email = <input type="email" name="Email">
+        </div>
+        <br>
+        <div>
+            DOB = <input type="date" name="DOB">
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="Male"> Female <input type="radio" name="Female"> Customisable <input
+                type="radio" name="Trans">
+        </div>
+        <br>
+        <div>
+            Write about yourself : <br> <textarea name="About" cols="90" rows="20" placeholder="Describe yourself"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="eligibility">Are You Eligible ? </label>
+            <input type="checkbox" name="Eligiblity" id="eligibility">
+        </div>
+        <br>
+        <div>
+            Bonus = <input type="number" name="Bonus">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car : </label>
+            <select name="Car selected" id="car"> <!-- put option value under select to select multiple options -->
+                <option value="M">Mercedes Benz</option>
+                <option value="B" selected>Bugatti Chiron</option>
+                <!-- put selected after value to select a option from first -->
+                <option value="G">BMW M8</option>
+                <option value="D">SRT Hellcat</option>
+                <option value="S">Mustang Shelby</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            I am a Robot = <input type="checkbox" name="Eligiblity" checked required> <br> 👆 Uncheck to submit
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Clear form">
+        </div>
+        <br>
+    </form>
+    <br>
+    <hr><br>
+
+    <h1>Inline and Block Elements</h1>
+
+    <p style="border: 2px solid red;">This is a paragraph</p>
+    <p style="border: 2px solid blue;">This is also a paragraph</p> <!-- Block elements = p, div, li -->
+    <span style="border: 2px solid red;">This is a span</span><span style="border: 2px solid blue;">This is also a
+        span</span> <!-- Inline elements = span, anchor (a), strong, em, img -->
+
+    <span style="border: 2px solid red;">This is a span</span><strong style="border: 2px solid blue;">This is also a
+        strong</strong>
+    <div style="border: 2px solid blue;">This is also a div</div>
+    <p style="border: 2px solid red;">This is a paragraph</p>
+    <a style="border: 2px solid red;">This is a anchor</a><em style="border: 2px solid blue;">This is also a em</em>
+    <br>
+    <hr><br>
+
+    <img style="border: 2px solid red;" src="image.jpg" width="200" height="200" alt="error"><img
+        style="border: 2px solid red;" src="YT_BANNER HIGH.png" width="200" height="200" alt="error">
+    <br>
+    <hr><br>
+
+    <ul>
+        <li style="border: 2px solid red;">This is a line</li>
+        <li style="border: 2px solid red;">This is a line</li>
+    </ul>
+    <br>
+    <hr><br>
+
+    <h1>Ids and Classes</h1>
+
+    <div id="mainbox" Class="redBg blackBorder">
+        <!-- a id is unique for a website, for example = id="mainbox" is not repeatable in this whole website, it cannot be repeated, class is repeatable. with CSS & JS we can style or modify a element of a website with the help of the id and class contains the style properties in it, so after putting classes in elements it will show its properties -->
+        This is mainbox
+    </div>
+    <span class="redBg"></span>
+
+    <!-- after the element, put (.) to create class and put (#) to create id -->
+    <div class="blackBg"></div>
+    <div id="ghoot"></div>
+    <div id="chumu" class="kalu redBg"></div>
+    <br>
+    <hr><br>
+
+    <h1>HTML Entities</h1>
+
+    <div id="entity">
+        <p>This is a paragraph</p>
+    </div>
+    <div id="another">
+        <!-- "&nbsp;" provides extra spaces if needed, but not recommended -->
+        <p>This is Another &nbsp;paragraph</p>
+        <!-- "&lt;","&gt;" helps to visible the p tag in website like "<p>" -->
+        <p>Paragraph is written like this &lt;p&gt;</p>
+        <p>Pound is written like this &pound;</p>
+        <p>Copyright is written like this &copy;</p>
+        <!-- dont memorise this always take google as reference -->
+    </div>
+    <br>
+    <hr><br>
+
+    <h1>HTML Semantic Elements</h1>
+
+    <details>
+        <summary>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis totam iusto quas reiciendis
+            consequuntur quibusda.</summary>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt repellat a odit. Sed fuga ratione
+        cupiditate modi in aut repudiandae eaque. Dolorem iste veritatis porro! Esse ipsum aut, at quisquam quia,
+        perspiciatis similique neque sed impediaut nam. Consectetur voluptatum, dolores quae beatae
+    </details>
+    <br>
+    <hr><br>
+
+    <h1>Video</h1>
+
+    <video src="1.mp4" width="900" height="450" controls autoplay loop muted poster="image.jpg"></video>
+    <audio src="biodynamic-impact-braam-tonal-dark-176441.mp3" controls autoplay loop muted preload="auto"></audio>
+    <!-- preload loads the audio data as the page loads -->
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    
+    <!--This is how you embed a website or a video file from another website in your website file-->
+    <iframe src="" frameborder="0"></iframe>    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=gIWArDT1cHRGSoKr&amp;start=804" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!--This is how you include a JavaScript file-->
+    <script src="souradipta.js"></script>
+</body>
+
+</html>
