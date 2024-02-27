@@ -26,13 +26,35 @@
         }
 
         /* Descendent Selector */
-        *{
-            background-color: rgb(12, 10, 12);color: rgb(75, 236, 247);
+        div p{
+            background-color: rgb(254, 74, 254);color: rgb(185, 185, 185);
         }
 
-        /* Descendent Selector */
-        div p{
-            background-color: rgb(12, 10, 12);color: rgb(75, 236, 247);
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: blue;
+        }
+
+        p:first-child{
+            background-color: maroon;
         }
     </style>
 </head>
@@ -61,6 +83,14 @@
             <p>I am a Paragraph inside a article under div.</p>
         </article>
     </div>
+
+    <a href="https://www.google.com" target="_blank">Go to Google</a>    
+    <a href="https://www.facebook2.com" target="_blank">Go to Facebook</a>    
+
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
 
 </body>
 </html>
