@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        p{
+            background-color: rgb(8, 240, 101);color: rgb(7, 133, 244);
+        }
+
+        /* Class Selector */
+        .red{
+            background-color: red;color: aliceblue;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: rgb(229, 21, 163);color: rgb(57, 126, 187);
+        }
+
+        /* Child Selector */
+        div > p{
+            background-color: rgb(12, 10, 12);color: rgb(247, 141, 75);
+        }
+
+        /* Descendent Selector */
+        *{
+            background-color: rgb(12, 10, 12);color: rgb(75, 236, 247);
+        }
+
+        /* Descendent Selector */
+        div p{
+            background-color: rgb(12, 10, 12);color: rgb(75, 236, 247);
+        }
+    </style>
+</head>
+<body>
+
+    <p>I am a paragraph</p>
+
+    <p>I am a another paragraph</p>
+
+    <div class="red">
+        I am a div.
+    </div>
+
+    <div id="green">
+        I  am a another div.
+    </div>
+
+    <div id="green">
+        I  am a another div.
+        <p>I am a Paragraph inside a div.</p>
+    </div>
+
+    <div id="green">
+        I  am a another div.
+        <article>
+            <p>I am a Paragraph inside a article under div.</p>
+        </article>
+    </div>
+
+</body>
+</html>
