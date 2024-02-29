@@ -23,6 +23,7 @@
             width: 80vw;
             height: 10vh;
             background-color: aquamarine;
+            font-size: 4em;
         }
 
         .container {
@@ -31,19 +32,31 @@
             border: 2px solid blue;
             /* width: 1920px; */
             width: 80vw;
-            height: 80vh;
+            /* min-width: 80vw; */
+            /* height: 80vh; */
+            min-height: 80vh;
             font-size: 18px;
             background-color: aquamarine;
         }
 
-        .container p{
+        .container div{
             font-size: 2em;
+            width: 50%;
+            border: 2PX solid red;
         }
 
-        .mycont{
-            background-color: yellow;
-            color: red;
-            width: 100vmin;
+        .container div p{
+            width: 50%;
+            border: 2PX solid blue;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            border: 2PX solid black;
+            margin: 10px auto;
+            font-size: 2em;
+            /* width: 100vmin; */
+            width: 80vw;
         }
     </style>
 </head>
@@ -53,15 +66,15 @@
         I am a box.
     </div>
     <div class="container">
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aliquam porro aperiam aliquid velit sit
-            fugiat
-            repellat quibusdam. Dicta, modi eligendi nam impedit consequatur sunt ducimus assumenda magni? Dicta
-            perferendis
-            harum velit! Tempora consequuntur ab, eaque illo, amet molestias nostrum officia rem reiciendis atque
-            aperiam
-            dolorem nisi itaque deserunt doloribus eos quia animi quae nobis eligendi.
-        </p>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maiores reprehenderit quo quisquam quis
+            harum, modi suscipit culpa quod vero laudantium minus alias vitae quaerat dolores! Consequuntur id
+            reprehenderit neque perspiciatis rerum, vero iusto ad, quod itaque eaque a, quo ex culpa! Ducimus, assumenda
+            voluptates!
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ducimus aliquid in ipsum accusantium incidunt. Odio autem omnis sit alias natus aliquid nulla.
+            </p>
+        </div>
         <br>
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units">Unit Reference</a>
     </div>
