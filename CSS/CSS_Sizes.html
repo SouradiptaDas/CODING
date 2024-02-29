@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            margin: auto;
+            box-sizing: border-box;
+            border: 2px solid blue;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            background-color: aquamarine;
+        }
+
+        .container {
+            margin: 23px auto;
+            box-sizing: border-box;
+            border: 2px solid blue;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 80vh;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        .container p{
+            font-size: 2em;
+        }
+
+        .mycont{
+            background-color: yellow;
+            color: red;
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box.
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aliquam porro aperiam aliquid velit sit
+            fugiat
+            repellat quibusdam. Dicta, modi eligendi nam impedit consequatur sunt ducimus assumenda magni? Dicta
+            perferendis
+            harum velit! Tempora consequuntur ab, eaque illo, amet molestias nostrum officia rem reiciendis atque
+            aperiam
+            dolorem nisi itaque deserunt doloribus eos quia animi quae nobis eligendi.
+        </p>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units">Unit Reference</a>
+    </div>
+    <div class="mycont">
+        I am another box.
+    </div>
+</body>
+
+</html>
