@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Specifity</title>
+    <style>
+        /* The Specifity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+        
+        /* The Specifity of this selector is 10 */
+        .yellow {
+            color: yellow !important;
+        }
+        
+        /* The Specifity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+        
+        /* The Specifity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The Specifity of this selector is 10 + 1 = 11 */
+        h1.cpurple {
+            color: purple;
+        }
+        
+        /* Attribute Selector */
+        /* The Specifity of this selector is 10 */
+        [data-x="a"] {
+            background-color: lightgreen;
+        }
+        
+        /* The Specifity of this selector is 1 + 10 + 10 + 10 + 10 = 41 */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: blue;" class="yellow cred cpurple" data-x="a">This is all about CSS Specifity</h1>
+        <p>Specifity Priority
+            Important > Inline CSS > Id Selector > Class and Attribute Selector > Element Selector > Universal Selector
+        </p>
+        <h4>Specificity Calculation</h4>
+        <p>To calculate specificity, assign a value to each part of the selector:</p>
+        <ul>
+            <li>Universal Selector: 0</li>
+            <li>Element selectors and pseudo-elements: 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+            <li>ID selectors: 100</li>
+            <li>Inline styles: 1000</li>
+            <li>Important tag: 10000</li>
+        </ul>
+        <p>Then, add up the values of all the parts in the selector.</p>
+        <p>Here is an example&nbsp;</p>
+    </div>
+    <div>
+        &lt;h1&gt; id="title" class="h1">CodeWithHarry&lt;/h1&gt;
+    </div>
+    <p>Here, the specificity value will be <strong>111 </strong>because ID has a specificity of 100, the class has a
+        specificity of 10, and the h1 element has a specificity of 1.</p>
+</body>
+
+
+</html>
