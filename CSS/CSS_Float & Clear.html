@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            /* prevents overflow of the floating element from the container */
+            display: flow-root;
+        }
+        img{
+            /* floats the element on top of the rest of the element and allows the rest of the element in its side */
+            float: left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            /* clears the floating element in its container. */
+            /* clear: left; */
+            /* clear: right; */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Float & Clear</h1>
+    <div class="cards">
+        <img src="https://images.pexels.com/photos/3622619/pexels-photo-3622619.jpeg?auto=compress&cs=tinysrgb&w=600" width="300" alt="error">
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores quas, numquam, optio reprehenderit consequatur itaque fuga dolorem asperiores labore, dolores facere ipsa!</p></div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe dignissimos non laborum iure minima provident et eos quas ad. Inventore sit sed voluptatibus asperiores molestiae? Vel officia quidem adipisci nobis dolores vitae tempora. Recusandae in exercitationem aut voluptatum magni laborum cum corrupti, modi voluptas aperiam ab. Animi sed exercitationem, delectus autem esse porro sunt dicta asperiores reprehenderit ducimus, maxime omnis voluptatem deleniti. Deserunt fugit quaerat odit excepturi porro beatae sapiente atque velit consectetur explicabo. Reiciendis ea molestiae numquam ex assumenda tenetur libero minima quae! Dolorem consectetur et libero doloremque dicta ea beatae alias unde! Rem ullam maxime quibusdam natus, ab, eveniet atque temporibus labore libero quaerat esse, quae quidem consequuntur error similique debitis quis fugit ipsum voluptatem? Sunt suscipit quos facere praesentium architecto molestiae inventore eligendi deleniti, explicabo numquam expedita voluptatem illum cupiditate ratione debitis, tempora aperiam quam nisi iusto mollitia. Voluptatum, deserunt sunt? Molestias blanditiis facilis sequi rerum pariatur eveniet incidunt, maiores non facere id, quod amet. Amet quod, in temporibus ducimus eligendi dignissimos. Vero saepe rerum rem quibusdam atque illum itaque odit expedita recusandae ut, facilis modi consequatur repudiandae, placeat culpa commodi! Corrupti quis sit doloribus fugit eligendi voluptate dicta dignissimos dolore repellendus a nihil, laudantium natus ad tempora ex sapiente quia illo, deleniti eos eveniet. Facilis, nulla! Error id omnis veritatis blanditiis dignissimos optio repudiandae obcaecati libero, fugit non nemo voluptatibus commodi cum consectetur beatae molestias iure molestiae tempora cumque atque nulla. Pariatur amet qui voluptatibus quia officia ratione eos eveniet esse dolorem ab debitis quisquam ut voluptates accusantium illum consequuntur at inventore ipsa, autem eum obcaecati nobis perspiciatis corporis. Non, quisquam sit. Vitae facilis sequi quaerat officiis error sapiente corrupti dicta reiciendis dolorem voluptatibus, beatae saepe fugit ad iure, cumque aspernatur neque corporis consequatur nulla eligendi magni eveniet minima. Hic ducimus eveniet omnis. Totam optio quod tenetur atque voluptatem voluptatibus commodi sapiente, soluta aliquam debitis odio ipsa recusandae sit impedit ducimus. Incidunt, ipsum minima accusamus dolor aliquid odit impedit dolorem aperiam iste natus, deleniti, libero et ratione nisi.</p>
+
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
