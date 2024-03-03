@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise 3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        :root{
+            --name-color:purple;
+            --main-nav-color:orange;
+            --sec-nav-back-color:lightblue;
+            --sec-nav-color:blue;
+            --butn-back-color:blue;
+            --butn-color:white;
+            --text-decoration-color:blue;
+            --shadow-preset:-3px 10px 15px 0px #27a22f;
+            --body-font:"Poppins", sans-serif;
+            --head-font:"Baloo Bhai 2", sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: var(--body-font); 
+        }
+        header {
+            position: sticky;
+        }
+        nav {
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px; 
+            background-color: var(--main-nav-color);
+            height: 17vh;
+        }
+        nav h2 {
+            font-family: var(--head-font); 
+            color: var(--name-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        nav ul {
+            display: flex;
+            cursor: pointer;
+            list-style: none;
+            width: 43vw;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: auto 10px;
+        }
+        button {
+            cursor: pointer;
+            background-color: var(--butn-back-color);
+            color: var(--butn-color);
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        .courses {
+            height: 10vh;
+            background-color: var(--sec-nav-back-color);
+            color: var(--sec-nav-color);
+            box-shadow: var(--shadow-preset);
+        }
+        nav ul li:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-color: var(--text-decoration-color);
+        }
+        button:hover {
+            background-color: rgb(40, 40, 137);
+            color: rgb(255, 202, 9);
+        }
+        @media only screen and (max-width: 445px) {
+            button{
+                width: 15vw;
+                margin: auto 3vw;
+                padding: 2px;
+            }
+            .nav{
+                height: 8vh;
+            }
+            .courses{
+                height: 5vh;
+            }
+            .nav h2 {
+                width: 43vw;
+                height: 3vh;
+                font-size: 14px;
+                margin: auto -2vw;
+            }
+            .nav ul {
+                display: none;
+            }
+            .courses ul {
+                visibility: hidden;
+            }
+        }
+        @media only screen and (min-width: 445px) {
+            .menu{
+                display: none;
+            }
+        }        
+        </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav">
+            <h2>&lt;/&gt; CoderDragenza</h2>
+            <ul>
+                <li>Home</li>
+                <li>Courses</li>
+                <li>Tutorial</li>
+                <li>Blog</li>
+                <li>Notes</li>
+                <li>Contact</li>
+                <li>My Gear</li>
+                <li>Work With Us</li>
+            </ul>
+            <button class="menu">Menu👇</button>
+            <button>Change Theme</button>
+            <button>Sign in</button>
+        </nav>
+        <nav class="courses">
+            <button>Home</button>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>JAVA</li>
+                <li>PYTHON</li>
+                <li>PHP</li>
+                <li>REACT JS</li>
+            </ul>
+            <button>Search</button>
+        </nav>
+    </header>
+    <main>
+        <div class="box box1">
+            <p>
+                l
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
