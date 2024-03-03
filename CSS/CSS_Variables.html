@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* Variables : You can put any value or property which you are using repeatedly in the whole coding. This can be color, units, urls, images, etc. */
+        /* Global Variables : These are generally kept under root */
+        :root{
+            --color: rgb(255, 208, 0);
+            --seccolor: rgb(232, 101, 164);
+            --defpad: 45px;
+            --defop: 0.3;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style-type: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+        /* Local Variables : These are generally kept under particularly specific selector to make changes for only that selector. */
+        ul li:first-child{
+            --color: rgb(200, 0, 255);
+            background-color: var(--color);
+        }
+        /* If Variable not found in both global and local variable so secondary value is kept. */
+        ul li:nth-child(2){
+            --color: rgb(61, 228, 122);
+            background-color: var(--color, red);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corrupti unde cumque? Fugiat magnam beatae eaque vel repellat asperiores, nostrum accusamus dolores qui itaque voluptatum perspiciatis libero accusantium alias! Ipsum facere voluptate numquam sunt nostrum placeat molestiae dignissimos, similique accusantium, fuga fugiat mollitia repellat. Beatae!
+    </div>
+</body>
+</html>

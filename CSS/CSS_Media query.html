@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        /* Syntax of a media query */
+        /* @media (not/only) (media type) and (expression){
+            CSS Style
+        } */
+        body {
+            background-color: yellow;
+        }
+        /* Broadly used media query 👇 */
+        @media only screen and (max-width: 445px) {
+            body {
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        /* Moderately used Media Query 👇 */
+        @media screen and (orientation: landscape) {
+            body{
+                border: 10px solid purple;
+            }
+        }
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            background-color: steelblue;
+            width: 344px;
+            height: 344px;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Media Query</h1>
+        <p>This is all about Media Query. This is used to make the website responsive for several devices. Generally a width of<b> 455px is considered for mobile screens</b>, <b>455px to 750px for tablets</b>, <b>750px to 1920px for pc screens</b> and <b>above for Ultra Wide screens</b>.</p>
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
