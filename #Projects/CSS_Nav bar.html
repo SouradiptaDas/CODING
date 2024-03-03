@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Exercise 3</title>
+    <title>CSS Nav Bar</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         :root{
             --name-color:purple;
             --main-nav-color:orange;
-            --sec-nav-back-color:lightblue;
-            --sec-nav-color:blue;
+            --courses-nav-back-color:lightblue;
+            --courses-nav-color:blue;
             --butn-back-color:blue;
             --butn-color:white;
             --text-decoration-color:blue;
@@ -63,10 +63,10 @@
             border-radius: 20px;
             padding: 10px 20px;
         }
-        .courses {
+        .courses-nav {
             height: 10vh;
-            background-color: var(--sec-nav-back-color);
-            color: var(--sec-nav-color);
+            background-color: var(--courses-nav-back-color);
+            color: var(--courses-nav-color);
             box-shadow: var(--shadow-preset);
         }
         nav ul li:hover {
@@ -84,22 +84,22 @@
                 margin: auto 3vw;
                 padding: 2px;
             }
-            .nav{
+            .main-nav{
                 height: 8vh;
             }
-            .courses{
+            .courses-nav{
                 height: 5vh;
             }
-            .nav h2 {
+            .main-nav h2 {
                 width: 43vw;
                 height: 3vh;
                 font-size: 14px;
                 margin: auto -2vw;
             }
-            .nav ul {
+            .main-nav ul {
                 display: none;
             }
-            .courses ul {
+            .courses-nav ul {
                 visibility: hidden;
             }
         }
@@ -112,7 +112,7 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <nav class="main-nav">
             <h2>&lt;/&gt; CoderDragenza</h2>
             <ul>
                 <li>Home</li>
@@ -128,7 +128,7 @@
             <button>Change Theme</button>
             <button>Sign in</button>
         </nav>
-        <nav class="courses">
+        <nav class="courses-nav">
             <button>Home</button>
             <ul>
                 <li>HTML</li>
