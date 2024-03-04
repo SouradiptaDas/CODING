@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav nav"
+                                "main main empty side"
+                                "foot foot foot foot";
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+        }
+        .item-1{
+           grid-area: nav;
+           background-color: aqua;
+        }
+        .item-2{
+            grid-area: main;
+            background-color: bisque;
+        }
+        .item-3{
+            grid-area: side;
+            background-color: beige;
+        }        
+        .item-4{
+            grid-area: foot;
+            background-color: brown;
+        }
+        .item-5{
+            grid-area: empty;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1 Navigation Bar</div>
+        <div class="item item-2">2 Main Content</div>
+        <div class="item item-3">3 Side Bar</div>
+        <div class="item item-4">4 Footer</div>
+        <div class="item item-5">5 Empty</div>
+    </div>
+</body>
+</html>

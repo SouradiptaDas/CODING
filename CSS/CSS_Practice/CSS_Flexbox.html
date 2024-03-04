@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+    <style>
+        /* default flex direction is in row in left to right so the default major axis will be in horizontal line and its perpendicular side will be its cross axis. flex command works by looking the major axis and perform its task */
+        .container{
+            border: 2px solid red;
+            background-color: aqua;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /* align-items used for only one line or item */
+            align-items: center;
+            /* align-content used for multiple lines which is only possible when wrapping the flex items of the container */
+            /* align-content: center; */
+            /* align-items: flex-start; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /* it sets the flex direction and then wrap or no wrap property */
+            /* flex-flow: row wrap; */
+            /* padding is not recommended in flexbox and grid. Use gap instead of that. */
+            /* gap: 30px; */
+            /* it sets the row gap and column gap */
+            /* gap: 40px 10px; */
+        }
+        .item{
+            border: 2px solid black;
+            background-color: blueviolet;
+            height: 92px;
+            width: 92px;
+            margin: 4px;
+            /* by default flex-grow of all items is 0, by giving flex-grow: 1; we telling all the items should take equal width of the container */
+            flex-grow: 1;
+        }
+        .item1{
+            /* similarly flex-grow: 10; means the item will take 10 times more width than other items in the container */
+            /* flex-grow: 2; */
+            /* for example, flex-shrink: 10; shrinks the item 10 times faster than other items in the container  */
+            /* flex-shrink: 2; */
+            /* aligns a particular item to align itself as per the command */
+            align-self: flex-end;
+        }
+        .item4{
+            align-self: flex-start;
+        }
+        /* by default order of the items remain 0; and the greater item having the order value it goes farther from the starting point */
+        .order1{
+            order: 1;
+        }
+        .order2{
+            order: 2;
+        }
+        .order3{
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <di class="container">
+            <!-- <div class="item order2">1</div> -->
+            <div class="item item1">2</div>
+            <div class="item">2</div>
+            <div class="item">2</div>
+            <div class="item item4">2</div>
+            <div class="item">2</div>
+            <div class="item">2</div>
+            <div class="item">2</div>
+            <div class="item">2</div>
+            <div class="item">2</div>
+            <div class="item">2</div>
+            <!-- <div class="item order3">4</div> -->
+            <div class="item">5</div>
+            <!-- <div class="item order1">66</div> -->
+            <div class="item"></div>
+    </main>
+</body>
+</html>
